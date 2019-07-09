@@ -2,7 +2,7 @@ import React from 'react'
 
 const List = ({todos, loading}) => {
 
-  let todoList = <div>loading...</div>;
+  let todoList = <div>기둘...</div>;
   if(!loading) todoList = todos.map( (todo) => <li key={todo.id}>{todo.title}</li>)
 
   return (
